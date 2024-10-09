@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced AI Chat System</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="container">
+      <div class="header">
+        AI Chat System
+      </div>
+
+      <div class="password-wrapper">
+        <input id="password" type="password" placeholder="Enter Password" aria-label="Password" required>
+      </div>
+
+      <div id="messages" class="messages">
+        <!-- Chat messages will appear here -->
+      </div>
+
+      <div class="input-area">
+        <textarea id="user-input" placeholder="Type your message here..." aria-label="Type your message" required></textarea>
+        <button id="send-btn" aria-label="Send Message">Send</button>
+        <button id="clear-btn" aria-label="Clear Memory">Clear Memory</button> <!-- New Clear Memory button -->
+      </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading hidden">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
